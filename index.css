@@ -1,0 +1,799 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+.bg-anh {
+    /* background-image: url("./asset/VN-en-20251110-TRIFECTA-perspective_131c3f7c-b1da-4ec7-9ec5-d54e28442304_medium.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 1108px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.outbox1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1108px;
+    height: 100px;
+    padding: 0px 80px;
+    opacity: 1;
+    z-index: 2;
+}
+
+.logoandsignin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 964px;
+    opacity: 1;
+}
+
+.menu-nav {
+    position: fixed;
+    width: 1108px;
+    height: 68px;
+    padding: 0px 80px;
+    opacity: 1;
+    z-index: 10;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo-menu {
+    display: flex;
+    height: 68px;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-menu ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-menu ul li {
+    display: inline-block;
+}
+
+.logo-menu ul li a {
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.user-menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 173px;
+    height: 68px;
+    top: 0px;
+    right: 80px;
+
+}
+
+.user-menu button {
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.user-menu input {
+    width: 274px;
+    height: 34px;
+    background-color: black;
+    padding-left: 30px;
+
+}
+
+
+.logo {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+    opacity: 1;
+}
+
+.logoandsignin span {
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+    opacity: 1;
+}
+
+.logoandsignin button {
+    height: 30px;
+    width: 75px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 560px;
+    width: 1108px;
+    padding: 32px;
+}
+
+.start h1 {
+    text-align: center;
+    height: 100px;
+    width: 508px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.start h2 {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.start h3 {
+    text-align: center;
+    font-size: 16px;
+}
+
+.emailinput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    height: 81px;
+    width: 508px;
+    gap: 5px;
+
+}
+
+.emailinput input {
+    height: 56px;
+    width: 291px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 24px 16px 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    border: 1px solid white;
+
+}
+
+.emailinput button {
+    height: 56px;
+    width: 176px;
+    color: white;
+    background-color: red;
+    border-radius: 5px;
+    border: 2px solid red;
+    font-size: 18px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    width: 1108px;
+}
+
+.listmovies {
+    margin-bottom: 56px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 252px;
+}
+
+.listmovies ul {
+    display: inline-block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 1108px;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie {
+    position: relative;
+}
+
+.listmovies ul li {
+
+    display: inline-block;
+}
+
+#toptrending {
+    position: absolute;
+    font-weight: bold;
+    color: black;
+    text-shadow:
+        -2px -2px white,
+        2px -2px white,
+        -2px 2px white,
+        2px 2px white;
+    background-color: none;
+    font-size: 80px;
+    z-index: 2;
+    bottom: 0px;
+    left: -5px;
+
+}
+
+.movie img {
+    display: flex;
+    width: 140px;
+    height: 190px;
+    border-radius: 20px;
+}
+
+.ruler img {
+    width: 1108px;
+    height: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    position: absolute;
+}
+
+.r1 {
+    height: 100px;
+    width: 1108px;
+
+}
+
+.trending {
+    display: flex;
+    font-size: 18px;
+    position: inline-block;
+    margin-bottom: 10px;
+    width: 1108px;
+    padding-left: 24px;
+
+}
+
+/* #btn button {
+    width: 24px;
+    height: 120px;
+    background-color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: 3;
+} */
+#btn1 {
+    position: absolute;
+    width: 36px;
+    height: 200px;
+    z-index: 3;
+    background-color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -25px;
+}
+
+#btn2 {
+    position: absolute;
+    width: 36px;
+    height: 200px;
+    z-index: 3;
+    background-color: black;
+    right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    bottom: 6px;
+    right: -25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.next {
+    width: 24px;
+    height: 120px;
+    background-color: #FFFFFF1A;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.prev {
+    width: 24px;
+    height: 120px;
+    background-color: #FFFFFF1A;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.reasons h2 {
+    font-size: 24px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+
+.box {
+    width: 530px;
+    height: 204px;
+    background-color: rgb(28, 13, 42);
+    border-radius: 15px;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 96px;
+    padding-right: 24px;
+
+}
+
+.more {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.box p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.ask button {
+    width: 1065px;
+    height: 84px;
+    font-size: 24px;
+    padding: 24px;
+    background-color: rgb(45, 45, 45);
+    text-align: start;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ask span {
+    font-size: 50px;
+}
+
+.ask p {
+    width: 1065px;
+    font-size: 24px;
+    padding: 24px;
+    background-color: rgb(45, 45, 45);
+}
+
+.ask h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-top: 16px;
+}
+
+.ask div {
+    padding-top: 2px;
+}
+
+.footer {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 305px 305px 305px;
+    margin-bottom: 14px;
+    margin-top: 25px;
+}
+
+.contact {
+    display: flex;
+    margin-top: 36px;
+}
+
+.footer li {
+    margin-top: 12px;
+}
+
+.footer p {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.end {
+    margin-top: 20px !important;
+    height: 61px;
+}
+
+.login-box {
+    display: flex;
+    width: 480px;
+    height: 709px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    opacity: 1;
+    z-index: 1;
+}
+
+.login-box2 {
+    width: 352px;
+    height: 613px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.login-box2 h1 {
+    font-size: 32px;
+    height: 40px;
+
+}
+
+.login-box2 button {
+    width: 352px;
+    height: 40px;
+    background-color: red;
+    border-radius: 5px;
+
+}
+
+#email,
+#pass {
+    width: 352px;
+    height: 56px;
+    border-radius: 5px;
+    padding: 24px 16px 8px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
+
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.forgot-pass {
+    width: 352px;
+    height: 20px;
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot-pass a {
+    font-size: 16px;
+    height: 20px;
+    font-weight: bold;
+}
+
+.box2 label {
+    font-size: 16px;
+    width: 334px;
+    height: 24px;
+    padding-left: 12px;
+}
+
+#check-box {
+    width: 16px;
+    height: 16px;
+}
+
+.remember-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 12px;
+    width: 352px;
+    height: 100px;
+}
+
+.remember-signup span {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 16px;
+}
+
+.forgot-pass-box {
+    width: 428px;
+    height: 572px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin: 80px 32px 96px;
+    z-index: 2;
+
+}
+
+.forgot-pass-box h1,
+.forgot-pass-box p,
+.forgot-pass-box input,
+.forgot-pass-box a,
+.forgot-pass-box label {
+    color: black;
+}
+
+.forgot-pass-box2 {
+    width: 348px;
+    height: 492px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.forgot-pass-box2 h1 {
+    font-size: 34px;
+    width: 335px;
+    height: 122px;
+    font-weight: 700px;
+    text-align: start;
+}
+
+.forgot-pass-box3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    width: 348px;
+    height: 100px;
+}
+
+.check-box-mail-mess {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.check-box-mail-mess input {
+    width: 16px;
+    height: 16px;
+}
+
+.check-box-mail-mess label {
+    font-size: 16px;
+    padding-left: 12px;
+    width: 306px;
+    height: 24px;
+}
+
+.forgot-pass-box2 p {
+    font-size: 16px;
+    width: 348px;
+    height: 40px;
+}
+
+.email-address {
+    width: 348px;
+    height: 144px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.email-address input {
+    width: 348px;
+    height: 48px;
+    border-radius: 5px;
+    padding: 20px 16px 4px;
+}
+
+.email-address button {
+    background-color: red;
+    font-size: 16px;
+    width: 348px;
+    height: 48px;
+    font-weight: bold;
+}
+
+.i-cant {
+    width: 348px;
+    height: 56px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#danh-sach-fim {
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    width: 1108px;
+    height: 115px;
+    padding: 0px 44px;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+#danh-sach-fim img {
+    width: 201px;
+    height: 110px;
+    padding: 0px 2px;
+
+}
+
+.top1mov {
+    width: 819px;
+    height: 623px;
+    position: absolute;
+    display: block;
+    right: 26%;
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+
+}
+
+.thong-tin-top1 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: flex-end;
+    bottom: 35%;
+    left: 4%;
+    top: 0;
+    width: 399px;
+    height: 405px;
+    gap: 10px;
+    z-index: 1;
+
+}
+
+.muc-luc1 {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 465px;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.page {
+    background-color: black;
+    width: 1108px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+}
+
+.thong-tin-gon {
+    font-size: 13.3px;
+}
+
+.btn-play button {
+    width: 91px;
+    height: 33px;
+    margin: 0px, 8px, 8px, 0px;
+    padding: 6.6px, 20px, 6.6px, 16.6px;
+}
+
+#Play {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#more-info {
+    color: white;
+    background-color: rgba(109, 109, 110, 0.7);
+    border: none;
+    border-radius: 3px;
+}
+
+.btn-play {
+    width: 399px;
+    height: 41px;
+    margin: 16.62px 0px 0px 0px;
+}
+
+.bg-home img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.9;
+    position: absolute;
+    width: 1108px;
+    height: 623px;
+    z-index: 1;
+}
+
+.muc-luc1 h2 {
+    font-size: 15.5px;
+    font-weight: bold;
+    width: 1108px;
+    height: 31px;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+#top-today {
+    position: absolute;
+    font-weight: bold;
+    color: black;
+    text-shadow:
+        -2px -2px white,
+        2px -2px white,
+        -2px 2px white,
+        2px 2px white;
+    background-color: none;
+    font-size: 190px;
+    z-index: -1;
+    bottom: -30px;
+    left: -60px;
+
+}
+
+.movie-today {
+    display: inline-block;
+    margin-left: 60px;
+    padding: 10px 10px;
+    position: relative;
+    width: 150px;
+}
+
+.movie-today img {
+    width: 99px;
+    height: 142px;
+    border-radius: 5px;
+    z-index: 3;
+}
