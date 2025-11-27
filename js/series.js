@@ -27,3 +27,20 @@ function setupSlider(rowId) {
 setupSlider('row1');
 setupSlider('row2');
 setupSlider('row3');
+
+const infoButtons = document.querySelector('.info_button');
+const popUps = document.querySelector('.pop_up');
+const clsButton = document.querySelector('.close_button');
+infoButtons.addEventListener('click', () => {
+    popUps.style.display = 'flex';
+});
+clsButton.addEventListener('click', () => {
+    popUps.style.display = 'none';
+});
+popUps.addEventListener('click', (event) => {
+    if (event.target === popUps) {
+        popUps.style.display = 'none';
+    }
+});
+
+

@@ -1,0 +1,158 @@
+body{
+    margin: 0px;
+    font-family: 'Poppins',sans-serif;
+    background-color: #fff;
+}
+.TimeAndIcon{
+    width: 375px;
+    height: 44px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+
+}
+.TimeAndIcon p{
+    margin: 0px;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 375px;
+}
+.navbar button{
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    left: 18px;
+    border: 0px;
+    background-color: white;
+    font-size: 16px;
+    font-style: bold;
+    cursor: pointer;
+}
+.ticket {
+  background: white;
+  border-radius: 20px;
+  width: 327px;
+  height: 628px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 24px;
+}
+
+.ticket-top {
+  text-align: center;
+  padding: 20px;
+  width: 327px;
+  height: 402px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticket-top h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.ticket-top p {
+  color: #aaa;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.qr-box {
+  width: 252px;
+  height: 252px;
+  background: #A9A2A30D;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+.qr-box img {
+  width: 196px;
+  height: 196px;
+}
+
+.divider {
+  position: relative;
+  height: 1px;
+  background: repeating-linear-gradient(
+    to right,
+    #ccc,
+    #ccc 5px,
+    transparent 5px,
+    transparent 10px
+  );
+  margin: 10px 0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: #f5f6fa;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.divider::before {
+  left: -20px;
+}
+
+.divider::after {
+  right: -20px;
+}
+
+.ticket-bottom {
+  text-align: center;
+  padding: 20px;
+}
+
+.ticket-bottom h4 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.info p {
+  color: #aaa;
+  margin: 0;
+}
+
+.info strong {
+  color: #333;
+}
+
+
+
+@media(min-width: 640px){
+    .TimeAndIcon{
+        width: 640px;
+        height: 44px;
+    }
+}
