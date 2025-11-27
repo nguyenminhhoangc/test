@@ -198,7 +198,9 @@ body{
     gap: 10px;
     transition: transform 0.5s ease;
 }
-
+.slides img{
+    height: 150px;
+}
 .slide {
     flex: 0 0 230px;
     height: 150px;
